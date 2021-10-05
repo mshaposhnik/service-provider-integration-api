@@ -36,13 +36,13 @@ class VaultAccessTokenServiceTest {
 
   @Inject VaultKVSecretEngine kvSecretEngine;
 
-  @RegisterExtension
-  static final QuarkusUnitTest config =
-      new QuarkusUnitTest()
-          .setArchiveProducer(
-              () ->
-                  ShrinkWrap.create(JavaArchive.class)
-                      .addAsResource("application.properties", "application.properties"));
+//  @RegisterExtension
+//  static final QuarkusUnitTest config =
+//      new QuarkusUnitTest()
+//          .setArchiveProducer(
+//              () ->
+//                  ShrinkWrap.create(JavaArchive.class)
+//                      .addAsResource("application.properties", "application.properties"));
 
   @Test
   public void secret() {
